@@ -41,3 +41,7 @@ class Calculate:
     def __str__(self, *args, **kwargs):
         # return "Calculate: " + self.name is None and "" or self.name
         return "Calculate: " + self.name
+
+
+if __name__ == '__main__':
+    print("run calculate.py")
