@@ -7,6 +7,7 @@
 """
 
 
+# 装饰器实现单例模式
 def singleton(class_):
     instances = {}
 
@@ -30,7 +31,22 @@ class Singleton:
         return "Singleton name is " + self.name
 
 
+def decorator_function(original_function):
+    def wrapper_function():
+        print('Before')
+        original_function()
+        print('After')
+
+    return wrapper_function
+
+
+@decorator_function
+def do_something():
+    print('Doing something')
+
+
 if __name__ == '__main__':
     s1 = Singleton("Tom")
     s2 = Singleton("Jerry")
     print(s1 == s2)
+    print(do_something())
