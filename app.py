@@ -5,7 +5,7 @@
 @File ：app.py
 @IDE ：PyCharm
 """
-
+from animal.Human import Human
 # 从哪个包中导入哪个模块
 from cal.calculate import Calculate
 # 从哪个包中导入哪个模块中的哪个方法
@@ -31,4 +31,8 @@ def main():
 if __name__ == '__main__':
     print("run app.py")
 
-    main()
+    # main()
+
+    human = Human("Tom", 12)
+    print(human)
+    human.run()
