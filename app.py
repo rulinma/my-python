@@ -18,7 +18,7 @@ def main():
     print(c.mul(1, 2))
     print(c.div(1, 2))
     print(c)
-    d = Calculate()
+    d = Calculate("D")
     print(d)
     print(Calculate.add(1, 2))
 

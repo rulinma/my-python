@@ -13,9 +13,14 @@ def plus(a, b):
 
 
 class Calculate:
-    def __init__(self):
-        print("init Calculate")
-        pass
+
+    def __init__(self, name=None):
+        if name is None:
+            print("init Calculate")
+            self.name = "None"
+        else:
+            print("init Calculate with name", name)
+            self.name = name
 
     @staticmethod
     def add(a, b):
@@ -32,3 +37,7 @@ class Calculate:
     @staticmethod
     def div(a, b):
         return a / b
+
+    def __str__(self, *args, **kwargs):
+        # return "Calculate: " + self.name is None and "" or self.name
+        return "Calculate: " + self.name
