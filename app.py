@@ -6,7 +6,10 @@
 @IDE ：PyCharm
 """
 
+# 从哪个包中导入哪个模块
 from cal.calculate import Calculate
+# 从哪个包中导入哪个模块中的哪个方法
+from cal.calculate import plus
 
 
 # __main__表示当前模块在直接执行时的名字。如果模块被导入，__main__将不会被执行。
@@ -21,6 +24,8 @@ def main():
     d = Calculate("D")
     print(d)
     print(Calculate.add(1, 2))
+
+    print(plus(10, 20))
 
 
 if __name__ == '__main__':
