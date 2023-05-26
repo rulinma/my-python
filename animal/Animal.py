@@ -5,6 +5,7 @@
 @File ：Animal.py
 @IDE ：PyCharm
 """
+from abc import abstractmethod
 
 
 class Animal:
@@ -12,8 +13,9 @@ class Animal:
         self.name = name
         self.age = age
 
+    @abstractmethod
     def run(self):
-        print(self.name + "Animal is running")
+        pass
 
     def __str__(self):
         return "Animal name is " + self.name + " age is " + str(self.age)
