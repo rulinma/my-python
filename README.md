@@ -15,4 +15,5 @@
 ## Docker
 
 * docker build -t my-python-app .
-* docker run -p 5000:5000 my-python-app
+* docker run -p 5005:5005 my-python-app
+* http://127.0.0.1:5005/
