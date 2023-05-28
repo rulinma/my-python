@@ -11,3 +11,8 @@
 ## Python机器学习
 
 ## Python常用功能
+
+## Docker
+
+* docker build -t my-python-app .
+* docker run -p 5000:5000 my-python-app

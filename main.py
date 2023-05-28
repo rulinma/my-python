@@ -16,6 +16,6 @@ def hello_world():
 
 
 if __name__ == '__main__':
-    app.run()
-    # app.run(host='0.0.0.0', port=5005, debug=True)
+    # app.run()
+    app.run(host='0.0.0.0', port=5005, debug=True)
     print("run flask app")
